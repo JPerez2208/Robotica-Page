@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Página educativa integral sobre robótica: historia, tipos, componentes, aplicaciones, programación, recursos, glosario, FAQ y más." />
+  <title>Robótica</title>
+  <link rel="icon" type="image" href="iconr.png">
+</head>
+<body>
+  <link rel="stylesheet" href="style.css">
+  <header>
+    <div class="container nav">
+      <div class="brand"><div class="logo" aria-hidden="true"></div><span>1C software</span></div>
+      <nav>
+        <ul>
+          <li><a href="#inicio" class="active">Inicio</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#tipos">Tipos</a></li>
+          <li><a href="#componentes">Componentes</a></li>
+          <li><a href="#aplicaciones">Aplicaciones</a></li>
+          <li><a href="#programacion">Programación</a></li>
+          <li><a href="#educativa">Educativa</a></li>
+          <li><a href="#futuro">Futuro</a></li>
+          <li><a href ="#recursos">Recursos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container inner">
+        <div>
+          <h1 class="reveal">Todo lo esencial sobre Robótica</h1>
+          <p class="lead reveal">Una guía práctica para entender qué es la robótica, cómo se construyen los robots, dónde se usan y cómo programarlos. Incluye historia, componentes, aplicaciones, ejemplos de código, glosario, recursos y más.</p>
+          <div style="margin-top:1rem; display:flex; gap:.6rem; flex-wrap:wrap">
+            <a class="btn" href="#tipos">Explorar tipos de robots</a>
+            <a class="btn" href="#programacion">Empezar a programar</a>
+          </div>
+        </div>
+        <div class="art reveal">
+          <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?q=80&w=1200&auto=format&fit=crop" alt="Brazo robótico industrial en acción"/>
+          <div class="chip" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORIA -->
+    <section id="historia">
+      <div class="container">
+        <h2>Historia de la robótica</h2>
+        <p>De los autómatas antiguos a los robots autónomos. Esta línea del tiempo resume hitos clave.</p>
+        <div class="timeline">
+          <div class="milestone"> <strong>Siglo III a. C.</strong> — Autómatas hidráulicos y mecánicos en civilizaciones antiguas.
+          <p> En la antigüedad, civilizaciones como la griega y la egipcia crearon autómatas, dispositivos mecánicos e hidráulicos diseñados para imitar movimientos humanos o animales.<p>
+          Ejemplos: Mecanismos de relojería, fuentes con figuras móviles y artefactos teatrales.
+           Importancia: Estos primeros autómatas demostraron la capacidad de aplicar principios de ingeniería para crear máquinas que simulaban vida y movimiento, sentando las bases para futuros desarrollos en robótica.</div>
+          <div class="milestone"> <strong>1942</strong> — Isaac Asimov publica las Tres Leyes de la Robótica.
+          <p>El escritor de ciencia ficción Isaac Asimov formuló las Tres Leyes de la Robótica en su cuento "Runaround". Estas leyes establecen un conjunto de principios éticos para el comportamiento de los robots.
+<p> Las Tres Leyes:
+<p>1.Un robot no puede dañar a un ser humano ni, por inacción, permitir que un ser humano sufra daño.
+<p>2.Un robot debe obedecer las órdenes dadas por los seres humanos, excepto si estas órdenes entran en conflicto con la Primera Ley.</p>
+<p>3.Un robot debe proteger su propia existencia, siempre y cuando esta protección no entre en conflicto con la Primera o la Segunda Ley.</p>
+<p> Importancia: Las Leyes de Asimov influyeron significativamente en la concepción ética y el diseño de robots, planteando cuestiones cruciales sobre la responsabilidad y el control en la robótica.</p></div>
+          <div class="milestone"> <strong>1954</strong> — George Devol patenta el primer robot industrial (base de Unimate).
+          <p> George Devol patentó el primer robot industrial programable, conocido como Unimate. Este robot fue diseñado para realizar tareas repetitivas y peligrosas en entornos industriales.</p>
+        <p>Unimate: Un brazo robótico hidráulico controlado por un sistema de programación numérica.</p>
+      <p>Importancia: La invención de Unimate marcó el inicio de la automatización industrial moderna, permitiendo la producción en masa y la mejora de la eficiencia en diversas industrias.</p></div>
+          <div class="milestone"> <strong>1969</strong> — Primer brazo robot controlado por computadora (Stanford ARM).
+          <p> En la Universidad de Stanford se desarrolló el Stanford Arm, el primer brazo robótico controlado por computadora. Este brazo robótico utilizaba algoritmos de inteligencia artificial para planificar y ejecutar movimientos complejos.</p>
+        <p>Características:</p>
+      <p>1. Controlado por un ordenador.</p>
+            <p> 2. Capacidad de realizar tareas de ensamblaje y manipulación.</p>
+      <p>Importancia: El Stanford Arm demostró el potencial de la inteligencia artificial en la robótica, abriendo nuevas posibilidades para la automatización de tareas complejas y la interacción humano-robot.</p></div>
+          <div class="milestone"> <strong>1996–2002</strong> — Robots domésticos y mascotas robóticas (AIBO, Roomba).
+          <p> A finales de la década de 1990 y principios de la década de 2000, surgieron los primeros robots domésticos y mascotas robóticas comerciales, como el AIBO de Sony y el Roomba de iRobot.</p>
+        <p>AIBO: Un perro robótico con capacidad de aprender y interactuar con su entorno</p>
+      <p>Roomba: Un robot aspirador autónomo diseñado para limpiar pisos de manera eficiente.</p>
+    Importancia: Estos robots marcaron el comienzo de la robótica de consumo, llevando la tecnología robótica a los hogares y haciendo que la automatización fuera accesible para el público en general.</div>
+          <div class="milestone"> <strong>2010–hoy</strong> — Visión por computador, aprendizaje profundo y robots colaborativos.
+          <p> En la década de 2010, la robótica experimentó avances significativos gracias a la visión por computador, el aprendizaje profundo y el desarrollo de robots colaborativos.</p>
+        <p> Visión por Computador: Permite a los robots "ver" y comprender su entorno a través del análisis de imágenes y videos.</p>
+      <p>Aprendizaje Profundo: Capacita a los robots para aprender de grandes cantidades de datos y mejorar su rendimiento con el tiempo.</p>
+    <p>Robots Colaborativos (Cobots): Diseñados para trabajar de manera segura junto a los humanos en entornos de trabajo compartidos.</p>
+  <p>Importancia: Estos avances están transformando la robótica, permitiendo la creación de robots más inteligentes, adaptables y capaces de realizar una amplia gama de tareas en diversos entornos, desde la industria hasta la atención médica.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIPOS DE ROBOTS -->
+    <section id="tipos">
+      <div class="container">
+        <h2>Tipos de robots</h2>
+        <p class="muted">Clasificación según uso, forma y movilidad.</p>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Industriales</h3>
+            <p>Es una máquina programable diseñada para realizar tareas de manufactura y producción de manera automática, precisa y repetitiva. Se utiliza en procesos como ensamblaje, soldadura, pintura, manipulación de materiales y embalaje, con el objetivo de aumentar la eficiencia, reducir errores y mejorar la seguridad en la industria.</p>
+            <span class="tag">Celdas de producción</span>
+          </article>
+          <article class="card reveal">
+            <h3>Servicio</h3>
+            <p>Son robots diseñados para ayudar a personas o empresas en tareas específicas fuera del ámbito industrial. Se utilizan en áreas como limpieza, cuidado de la salud, transporte, seguridad, educación y entretenimiento, facilitando el trabajo humano y mejorando la eficiencia y comodidad.</p>
+            <span class="tag">Robots sociales</span>
+          </article>
+          <article class="card reveal">
+            <h3>Humanoides</h3>
+            <p> Son robots que imitan la forma y movimientos humanos. Pueden ser completos (cuerpo entero), sociales (interacción con personas) o de investigación/servicio (asistencia en laboratorios, hospitales o empresas).</p>
+            <span class="tag">Bipedestación</span>
+          </article>
+          <article class="card reveal">
+            <h3>Móviles</h3>
+            <p>Son robots diseñados para desplazarse de manera autónoma o controlada dentro de su entorno, realizando tareas sin necesidad de estar fijos en un lugar. Pueden moverse sobre tierra, aire o agua, adaptándose a distintos terrenos y condiciones.</p>
+            <span class="tag">SLAM / Navegación</span>
+          </article>
+          <article class="card reveal">
+            <h3>Educativos</h3>
+            <p>Son robots diseñados para apoyar y mejorar el aprendizaje en distintos niveles educativos. Se utilizan para enseñar programación, robótica y ciencias, al mismo tiempo que fomentan habilidades como el pensamiento lógico, la creatividad, la resolución de problemas y el trabajo en equipo.</p>
+            <span class="tag">Aulas</span>
+          </article>
+          <article class="card reveal">
+            <h3>Micro/Nano</h3>
+            <p>Son robots extremadamente pequeños diseñados para realizar tareas precisas en espacios reducidos, usados en medicina, investigación científica e industria para manipular células, moléculas o componentes minúsculos.</p>
+            <span class="tag">Bio-robótica</span>
+          </article>
+        </div>
+
+        <div class="gallery">
+          <img src="https://agendarweb.com.ar/wp-content/uploads/2022/10/Industrial-Robot.jpg" alt="Robot industrial"/>
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Robot de servicio"/>
+          <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=1200&auto=format&fit=crop" alt="Robot humanoide"/>
+          <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2017/09/262121-dron-yuneec.jpg?tf=1200x675" alt="Dron"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPONENTES -->
+    <section id="componentes">
+      <div class="container">
+        <h2>Componentes de un robot</h2>
+        <div class="split">
+          <div>
+            <div class="cards">
+              <div class="card"><h3>Sensores</h3><p>Ultrasonido, LIDAR, cámaras, IMU, encoders.</p></div>
+              <div class="card"><h3>Actuadores</h3><p>Servos, motores DC/BLDC, neumática e hidráulica.</p></div>
+              <div class="card"><h3>Control</h3><p>Microcontroladores (Arduino), SBC (Raspberry Pi), PLCs.</p></div>
+              <div class="card"><h3>Energía</h3><p>Baterías LiPo, gestión de potencia, convertidores.</p></div>
+              <div class="card"><h3>Estructura</h3><p>Chasis, eslabones, reductoras, materiales.</p></div>
+              <div class="card"><h3>Comunicaciones</h3><p>UART, I2C, SPI, CAN, Wi‑Fi, BLE.</p></div>
+            </div>
+          </div>
+          <div>
+            <table aria-label="Tabla de ejemplo de componentes">
+              <thead><tr><th>Componente</th><th>Función</th><th>Ejemplo</th></tr></thead>
+              <tbody>
+                <tr><td>Sensor distancia</td><td>Evitar obstáculos</td><td>HC‑SR04, LIDAR Lite</td></tr>
+                <tr><td>Motor</td><td>Movimiento</td><td>NEMA17, 2212 (drones)</td></tr>
+                <tr><td>Controlador</td><td>Procesamiento</td><td>Arduino UNO, Raspberry Pi 5</td></tr>
+                <tr><td>Driver</td><td>Potencia</td><td>L298N, ESC 30A</td></tr>
+                <tr><td>Batería</td><td>Alimentación</td><td>3S LiPo 2200 mAh</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APLICACIONES -->
+    <section id="aplicaciones">
+      <div class="container">
+        <h2>Áreas de aplicación</h2>
+        <div class="cards">
+          <div class="card"><h3>Industria</h3><p>Automotriz, electrónica, empaquetado.</p><span class="tag">Brazos / cobots</span></div>
+          <div class="card"><h3>Medicina</h3><p>Cirugía asistida, rehabilitación, prótesis.</p><span class="tag">Alta precisión</span></div>
+          <div class="card"><h3>Espacio</h3><p>Exploración planetaria, satélites de servicio.</p><span class="tag">Entornos extremos</span></div>
+          <div class="card"><h3>Defensa</h3><p>Desminado, vigilancia, UGV/UGS.</p><span class="tag">Seguridad</span></div>
+          <div class="card"><h3>Hogar</h3><p>Limpieza, asistencia, cocina inteligente.</p><span class="tag">Robots personales</span></div>
+          <div class="card"><h3>Educación</h3><p>Aprendizaje STEM y competencias.</p><span class="tag">Aulas y clubes</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMACIÓN -->
+    <section id="programacion">
+      <div class="container">
+        <h2>Programación y software</h2>
+        <p>Lenguajes comunes: <strong>Python</strong>, <strong>C/C++</strong>, <strong>Java</strong>, <strong>MATLAB</strong>, y frameworks como <strong>ROS/ROS 2</strong>. Ejemplo simple en Arduino (C++) para mover un servo:</p>
+        <pre><code>// Control básico de servo con Arduino
+#include &lt;Servo.h&gt;
+Servo s;
+
+void setup(){
+  s.attach(9); // pin PWM
+}
+
+void loop(){
+  for(int ang=0; ang&lt;=180; ang+=5){
+    s.write(ang);
+    delay(20);
+  }
+  for(int ang=180; ang&gt;=0; ang-=5){
+    s.write(ang);
+    delay(20);
+  }
+}
+</code></pre>
+        <p>Ejemplo en Python (pseudocódigo) para un robot móvil que evita obstáculos:</p>
+        <pre><code>while True:
+    dist = sensor_distancia.leer()
+    if dist &lt; 30:
+        robot.girar(90)
+    else:
+        robot.avanzar(0.3)  # m/s
+</code></pre>
+      </div>
+    </section>
+
+    <!-- ROBÓTICA EDUCATIVA -->
+    <section id="educativa">
+      <div class="container">
+        <h2>Robótica educativa</h2>
+        <div class="cards">
+          <div class="card"><h3>LEGO / VEX</h3><p>Construcción rápida para competencias y proyectos.</p><span class="tag">Principiantes</span></div>
+          <div class="card"><h3>Arduino</h3><p>Prototipado electrónico y control de actuadores.</p><span class="tag">Intermedio</span></div>
+          <div class="card"><h3>Raspberry Pi</h3><p>Linux, visión por computador y ROS.</p><span class="tag">Avanzado</span></div>
+          <div class="card"><h3>Simulación</h3><p>Gazebo, Webots, CoppeliaSim para probar sin hardware.</p><span class="tag">Seguridad</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUTURO Y ÉTICA -->
+    <section id="futuro">
+      <div class="container">
+        <h2>Robótica y futuro</h2>
+        <div class="split">
+          <div>
+            <p>La robótica se integra con IA generativa, visión multimodal, materiales blandos y control distribuido. Tendencias: <em>cobots</em> seguros, robots de servicio en hogares, logística autónoma y microrrobótica médica.</p>
+            <ul>
+              <li>Percepción avanzada (cámaras + LIDAR + IA).</li>
+              <li>Aprendizaje por refuerzo y <em>foundation models</em> para control.</li>
+              <li>Robots modulares y reconfigurables.</li>
+              <li>Diseño sostenible y eficiencia energética.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="card">
+              <h3>Ética y sociedad</h3>
+              <p>Privacidad, sesgos algorítmicos, seguridad funcional, impacto laboral y responsabilidad legal. Diseñar con enfoque humano‑centro.</p>
+              <p><span class="pill">Buenas prácticas</span> • Análisis de riesgo • Normativas (ISO 10218, ISO/TS 15066)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECURSOS -->
+    <section id="recursos">
+      <div class="container">
+        <h2>Recursos y glosario</h2>
+        <div class="split">
+          <div class="card">
+            <h3>Glosario básico</h3>
+            <ul>
+              <li><strong>Actuador:</strong> Elemento que convierte energía en movimiento.</li>
+              <li><strong>Sensor:</strong> Dispositivo que mide el entorno.</li>
+              <li><strong>Control PID:</strong> Técnica de control con términos proporcional, integral y derivativo.</li>
+              <li><strong>SLAM:</strong> Localización y mapeo simultáneos.</li>
+              <li><strong>ROS:</strong> Sistema operativo para robots.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Enlaces útiles</h3>
+            <ul>
+              <li><a href="https://www.arduino.cc/" target="_blank" rel="noopener">Documentación de Arduino</a></li>
+              <li><a href="https://www.raspberrypi.com/documentation/" target="_blank" rel="noopener">Guías de Raspberry Pi</a></li>
+              <li><a href="https://docs.ros.org/en/rolling/" target="_blank" rel="noopener">Tutoriales de ROS/ROS 2</a></li>
+              <li><a href="https://gazebosim.org/home" target="_blank" rel="noopener">Simulador Gazebo</a></li>
+              <li><a href="https://cyberbotics.com/" target="_blank" rel="noopener">Simulador Webots</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <h2>Preguntas frecuentes</h2>
+        <div class="faq">
+          <details><summary>¿Qué diferencia hay entre un robot y una máquina automática?</summary>
+            <p>Un robot es reprogramable, con sensores y actuadores que permiten percibir y actuar; una máquina automática sigue ciclos fijos con poca adaptación.</p>
+          </details>
+          <details><summary>¿Necesito saber programar para empezar?</summary>
+            <p>No, puedes comenzar con kits visuales y avanzar hacia lenguajes como Python o C++.</p>
+          </details>
+          <details><summary>¿Qué es un cobot?</summary>
+            <p>Un robot colaborativo diseñado para trabajar de forma segura junto a personas.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; gap:1rem; align-items:center; justify-content:space-between; flex-wrap:wrap">
+        <div>© <span id="year"></span> Robótica • Hecho con mucho amor para aprender</div>
+        <a class="pill" href="#inicio">Volver arriba ↑</a>
+         <a href="https://www.instagram.com/fullurbanstyle_/" target="_blank" title="Instagram" style="color:#fff;font-size:1.5em;">
+                    <i class="bi bi-instagram"></i>
+                </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Año actual
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Intersection observe para animaciones reveal
+    const revealEls = document.querySelectorAll('.reveal, .card');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, {threshold:.12, rootMargin:'-10% 0px -10% 0px'});
+    revealEls.forEach(el => {el.classList.add('reveal'); io.observe(el)});
+
+    // Active link on scroll
+    const sections = [...document.querySelectorAll('main section')];
+    const links = [...document.querySelectorAll('header nav a')];
+    const byId = id => links.find(l => l.getAttribute('href') === '#' + id);
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if(e.isIntersecting){
+          links.forEach(l => l.classList.remove('active'))
+          const l = byId(e.target.id); if(l) l.classList.add('active');
+        }
+      })
+    }, {rootMargin: '-45% 0px -50% 0px', threshold: .1});
+    sections.forEach(s => obs.observe(s));
+
+    // Theme toggle (dark/light minimal)
+    const toggle = document.getElementById('themeToggle');
+    let light = false;
+    toggle.addEventListener('click', () => {
+      light = !light;
+      document.documentElement.style.setProperty('--bg', light ? '#f7f8fb' : '#0b0d12');
+      document.body.style.background = light ? '#f7f8fb' : 'linear-gradient(180deg,#090b10,#0b0d12 30%,#0b0d12 100%)';
+      document.documentElement.style.setProperty('--panel', light ? '#ffffff' : '#12151d');
+      document.documentElement.style.setProperty('--text', light ? '#0e1320' : '#e7eaf3');
+      document.documentElement.style.setProperty('--border', light ? '#e6e9f3' : '#1f2533');
+      document.documentElement.style.setProperty('--muted', light ? '#55607b' : '#a8b3cf');
+      toggle.textContent = light ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
